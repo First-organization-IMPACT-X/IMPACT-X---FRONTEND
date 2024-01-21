@@ -1,0 +1,304 @@
+/* Alerts */
+.messageError {
+  color: rgb(112, 109, 109);
+  white-space: nowrap;
+  font-size: 17px;
+}
+
+.messageError:hover {
+  color: rgb(12, 24, 113);
+}
+
+/* Media screen Mobile*/
+
+.containerFixed {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  padding: 15px 10px;
+  transform: translate(-50%, -50%);
+  background: white;
+  box-shadow: 2px 3px 10px black;
+  z-index: 10;
+  overflow: auto;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+/* Boton principal */
+.mainButton {
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 17px;
+  padding: 5px 15px;
+  color: white;
+  background: rgb(51, 144, 51);
+  transition: background 0.2s;
+  -webkit-transition: background 0.2s;
+  -moz-transition: background 0.2s;
+  -ms-transition: background 0.2s;
+  -o-transition: background 0.2s;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.mainButton:hover {
+  background: green;
+}
+/* ----------------------------- */
+
+.topSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topSection p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.topSection h1 {
+  margin: 0px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Style input of create comment */
+.containerInputCreateComment {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.containerInputCreateComment input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.buttonCreateNewComment {
+  background-color: #4ab02b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 12px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.buttonCreateNewComment:hover {
+  background-color: #2b7813;
+}
+
+/* Styles of Comments */
+.containerComment {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+  padding: 5px;
+  background-color: #eeebeb;
+  border-radius: 10px;
+}
+
+.userImage {
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.userImage img {
+  width: 160px;
+  border-radius: 50%;
+}
+
+.commentContent {
+  width: 100%;
+}
+
+.commentUsername {
+  white-space: nowrap;
+  text-decoration: underline;
+  margin: 0px;
+  font-size: 22px;
+}
+
+.commentText {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 5px;
+  font-size: 18px;
+  word-break: break-word;
+}
+
+.commentDate {
+  display: block;
+  white-space: nowrap;
+  text-align: end;
+  margin: 0px 10px;
+}
+
+/* for user-owned blogs */
+.updateAndDeleteButtonContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.updateAndDeleteButtonContainer b {
+  margin-bottom: 10px;
+}
+
+.updateAndDeleteButtonContainer .buttonUpdate {
+  margin: 5px;
+  background-color: #3a5acb;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 12px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.updateAndDeleteButtonContainer .buttonUpdate:hover {
+  background: rgb(28, 28, 223);
+}
+
+.updateAndDeleteButtonContainer .buttonDelete {
+  background-color: #d02a0d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 12px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.updateAndDeleteButtonContainer .buttonDelete:hover {
+  background-color: #a21e12;
+}
+
+/* ------------------------------  */
+/* View of update comment to user */
+.commentsUpdateVisibility {
+  background: url("../../../assets/blog/blog_detail/imagen_de_fondo_actualizacion_comentario.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+}
+
+.buttonClose {
+  text-align: center;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.containerUpdateComment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.containerFormUpdateComment {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5) 
+}
+
+.textTarea {
+  padding: 20px 10px 10px 10px;
+  border-radius: 15px;
+  font-size: 19px;
+  border:none;
+  outline: none;
+  background: #fff;
+}
+
+.containerFormButtonsUpdateComments {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonFormUpdate {
+  margin: 10px;
+  background-color: #3a5acb;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 12px;
+  cursor: pointer;
+  font-size: 19px;
+  transition: background-color 0.3s ease;
+}
+
+.buttonFormUpdate:hover {
+  background: rgb(28, 28, 223);
+}
+
+.buttonFormDiscard {
+  margin: 10px;
+  background-color: #d02a0d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 12px;
+  cursor: pointer;
+  font-size: 19px;
+  transition: background-color 0.3s ease;
+}
+
+.buttonFormDiscard:hover {
+  background: #a21e12;
+}
+
+
+/*   Media screen tablet and Desktop   */
+@media screen and (min-width: 550px) {
+  .containerFixed {
+    padding: 25px 40px;
+  }
+
+  .containerComment {
+    flex-direction: initial;
+  }
+
+  .userImage {
+    display: initial;
+    justify-content: initial;
+  }
+
+  .updateAndDeleteButtonContainer {
+    flex-direction: initial;
+    justify-content: space-between;
+  }
+
+  .updateAndDeleteButtonContainer b {
+    margin: 0px;
+    margin-right: 10px;
+  }
+}

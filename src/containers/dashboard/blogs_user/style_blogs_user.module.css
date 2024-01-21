@@ -1,0 +1,272 @@
+/* Style for mobile */
+.viewInitalBlogByUser {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.bottomNavegationScrollAppearance {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.bottomNavegationScrollAppearance h1 {
+  font-size: 33px;
+  color: black;
+  cursor: pointer;
+  padding: 20px;
+  margin: 0px;
+}
+
+.containerBlogsUser {
+  padding: 0px 0px;
+  margin-top: 70px;
+}
+
+.containerBlogsUser nav {
+  width: 100%;
+  background: #e8e8e8;
+  box-shadow: 2px 2px 10px black;
+  padding: 15px 0px;
+  text-align: center;
+}
+
+.containerBlogsUser nav .linkNavbar {
+  font-size: 27px;
+  color: white;
+  text-decoration: none;
+  padding: 5px 40px;
+  border-radius: 15px;
+  background-color: rgb(87, 192, 89);
+  transition: background 0.6s;
+}
+
+.containerBlogsUser nav .linkNavbar:hover {
+  background-color: rgb(63, 153, 63);
+}
+
+.titleMajor {
+  white-space: nowrap;
+  color: rgb(56, 56, 56);
+  font-size: 30px;
+  text-align: center;
+}
+
+/* ----------------- */
+/* Styles blog list */
+.separateBlogContainer {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.containerImg {
+  margin-top: 10px;
+}
+
+.containerImg img {
+  width: 150px;
+}
+
+.containerContent {
+  text-align: center;
+  width: 100%;
+  word-break: break-word;
+}
+
+.containerContent h1 {
+  font-size: 25px;
+  margin: 0px;
+}
+
+/* Contenedor del titulo y la etiqueta de publico o privado */
+.containerTitleAndPublic {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.containerTitleAndPublic .publicCase {
+  text-decoration: underline;
+  white-space: nowrap;
+  font-size: 19px;
+  color: green;
+}
+
+.containerTitleAndPublic .privateCase {
+  text-decoration: underline;
+  white-space: nowrap;
+  font-size: 19px;
+  color: rgb(162, 7, 7);
+}
+/* ------------------------------- */
+
+.containerContent p {
+  margin: 0px;
+  padding: 5px 10px;
+  font-size: 19px;
+}
+
+.containerButtons {
+  margin-bottom: 10px;
+}
+
+.buttonDelete {
+  background-color: #a83c3c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 15px;
+  font-size: 19px;
+  transition: background-color 0.3s ease;
+}
+
+.buttonDelete:hover {
+  background-color: #8b3838;
+}
+
+.buttonUpdate {
+  margin: 5px;
+  background-color: #4b61af;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+  font-size: 19px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttonUpdate:hover {
+  background: rgb(51, 51, 169);
+}
+
+.containerButtonsAndDate b {
+  font-size: 19px;
+}
+
+/* Styles buttons pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.pageButton {
+  background-color: #4ec776;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pageButton:hover {
+  background-color: #0e9131;
+}
+/* -------------------------- */
+
+
+/* Style for tablet */
+
+@media screen and (min-width: 550px) and (max-width: 800px) {
+  .containerBlogsUser nav {
+    text-align: end;
+    padding: 20px 0px;
+  }
+
+  .containerBlogsUser nav .linkNavbar {
+    margin: 0px 20px;
+  }
+
+}
+
+/* Style for desktop*/
+@media screen and (min-width: 750px) {
+  .bottomNavegationScrollAppearance {
+    display: none;
+  }
+
+  .containerBlogsUser {
+    margin-top: 0px;
+    padding-left: 235px;
+  }
+
+  .titleMajor {
+    text-align: start;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+
+  .containerBlogsUser nav {
+    text-align: end;
+    padding: 20px 0px;
+  }
+
+  .containerBlogsUser nav .linkNavbar {
+    margin: 0px 20px;
+  }
+
+  .separateBlogContainer {
+    flex-direction: row;
+    border-radius: 10px;
+    margin-right: 7%;
+    margin-left: 20px;
+  }
+
+  .containerImg {
+    margin: 10px;
+  }
+
+  .containerContent {
+    padding: 10px;
+    text-align: start;
+  }
+
+  /* Contenedor del titulo y la etiqueta de publico o privado */
+  .containerTitleAndPublic {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .containerTitleAndPublic .publicCase {
+    margin-right: 8px;
+  }
+
+  .containerTitleAndPublic .privateCase {
+    margin-right: 8px;
+  }
+  /* ---------------------------------- */
+
+  .containerContent p {
+    padding: 0px;
+  }
+
+  .containerButtonsAndDate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .containerButtons {
+    white-space: nowrap;
+  }
+
+  .containerButtonsAndDate b {
+    margin-right: 10px;
+    white-space: nowrap;
+  }
+}

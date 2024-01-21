@@ -1,0 +1,131 @@
+/* Styles of overlay */
+.overlay {
+  position: absolute;
+  top: 200px;
+  width: 100%;
+  height: 100%;
+  background: rgb(229, 226, 226);
+}
+
+.loaderContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  width: 80px;
+  height: 80px;
+  border: 10px solid #747272;
+  border-bottom-color: #ff3d00;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* ______________________*/
+
+
+/* Media screen mobile */
+.containerContent {
+  padding: 20% 6% 20% 6%;
+  border-radius: 10px;
+  text-align: center;
+  background: #fff;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 20px 10px rgba(0, 0, 0, 0.3);
+}
+
+.containerContent h1 {
+  font-size: 30px;
+  margin: 10px 0;
+  color: black;
+}
+
+.containerContent h1::first-letter {
+  color: green;
+  font-size: 35px;
+}
+
+.containerContent p {
+  font-size: 19px;
+  color: black;
+  line-height: 1.3;
+}
+
+.containerButtons {
+  margin-top: 40px;
+}
+
+.containerButtons button {
+  background: #2cae2a;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.containerButtons button:hover {
+  background: #056603;
+}
+
+.containerImg {
+  display: none;
+}
+
+/* Style for tablet */
+@media screen and (min-width: 550px) and (max-width: 800px) {
+  .containerContent p {
+    padding: 0px;
+  }
+}
+
+/* Style for desktop*/
+@media screen and (min-width: 800px) {
+  .containerAccess {
+    margin: 25px 0px;
+    display: flex;
+  }
+
+  .containerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 400px;
+    background: initial;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .containerContent h1 {
+    margin: 0px 0px;
+  }
+
+  .containerContent p {
+    margin: 0px 0px;
+    padding-top: 20px;
+  }
+
+  .containerButtons {
+    margin-top: 10px;
+  }
+}

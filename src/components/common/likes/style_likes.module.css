@@ -1,0 +1,52 @@
+/* Style for mobile, tablet and desktop*/
+.messageError {
+  color: rgb(112, 109, 109);
+  white-space: nowrap;
+  font-size: 17px;
+}
+
+.messageError:hover {
+  color: rgb(0, 0, 0);
+}
+
+/* Style of button */
+
+
+.mainButton {
+  cursor: pointer;
+  font-size: 25px;
+  margin-right: 10px;
+  color: rgb(64, 64, 231);
+}
+
+.counter {
+  font-size: 23px;
+  font-weight:bold;
+  margin-left: -5px;
+}
+
+/* ___________________ */
+
+/* Style loader */
+.loader {
+  width: 20px;
+  height: 20px;
+  margin: 0px 10px 0px 5px;
+  border: 4px solid black;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ___________________ */

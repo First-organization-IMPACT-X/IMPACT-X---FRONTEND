@@ -1,0 +1,356 @@
+/* Media screen mobile */
+
+/* Styles container inital 1 */
+.containerInitial1 {
+  background-color: #f7f7f7;
+  padding: 26% 0px 26% 0px;
+}
+
+.containerContent1 {
+  padding: 0px 8%;
+}
+
+.containerContent1 h1 {
+  width: 100%;
+  height: 200px;
+  font-size: 32px;
+  color: #333;
+  margin: 0px;
+}
+
+.tecnologyAndDesignContainer {
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  border: 1px solid gray;
+  padding: 5px 0px;
+  border-radius: 6px;
+  margin-top: 75px;
+}
+
+.containerContent1 b {
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 20px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.containerContent1 b:hover {
+  text-decoration: underline;
+  color: green;
+}
+
+.containerImg1 {
+  display: none;
+}
+
+.containerImg1 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+/* ------------------------- */
+
+/* Styles container inital 2 */
+.containerInitial2 {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  padding: 15% 5% 15% 5%;
+}
+
+.containerInitial2 h1 {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.containerContent2 h2 {
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.containerInitial2 h1::first-letter {
+  color: green;
+  font-size: 31px;
+}
+
+.containerOfAdvantagesItem {
+  padding: 5% 5% 5% 5%;
+  border: 2px solid #e5e5e5;
+  border-radius: 5px;
+  margin: 15px 0px;
+  transition: transform 0.2s;
+}
+
+.containerOfAdvantagesItem:hover {
+  transform: translateY(-2px);
+}
+
+.containerOfAdvantagesItem h1 {
+  font-size: 32px;
+  color: green;
+  margin-bottom: 10px;
+}
+
+.containerOfAdvantagesItem h3 {
+  font-size: 28px;
+  color: #333;
+}
+
+.containerOfAdvantagesItem p {
+  font-size: 19px;
+  color: #555;
+  padding-bottom: 10px;
+}
+
+.person {
+  display: none;
+}
+/* ------------------------- */
+
+/* Styles container inital 3 */
+.containerInitial3 {
+  background-color: #f7f7f7;
+  padding: 10% 3% 10% 3%;
+  border: 1px solid #e5e5e5;
+}
+
+.containerContent3 {
+  padding: 20px;
+}
+
+.containerContent3 h1 {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.containerContent3::first-letter {
+  font-size: 32px;
+  color: green;
+}
+
+.containerContent3 p {
+  font-size: 20px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.containerImg2 {
+  display: none;
+}
+
+.containerImg2 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+/* ------------------------- */
+
+/* Styles container inital 4 */
+.containerInitial4 {
+  text-align: center;
+  background-color: #fff;
+  padding: 18% 5% 18% 5%;
+}
+
+.containerContent4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.containerImg3 {
+  display: initial;
+}
+
+.containerImg3 img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.containerContent4 h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.containerContent4 p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.containerContent4 button {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #2a8f31;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.containerContent4 button:hover {
+  background-color: #054a02;
+}
+/* ------------------------- */
+
+/* ----------------------------------------------------- */
+/* ----------------------------------------------------- */
+/* Style for Tablet and desktop*/
+@media screen and (min-width: 800px) {
+  /* Styles container inital 1 */
+  .containerInitial1 {
+    background: initial;
+    padding: 10.5% 0px 10.5% 0;
+    display: flex;
+    position: relative;
+  }
+
+  .containerContent1 {
+    width: 80%;
+  }
+
+  .containerContent1 h1 {
+    font-size: 40px;
+    width: 70%;
+    height: 150px;
+  }
+
+  .tecnologyAndDesignContainer {
+    border: none;
+    max-width: 500px;
+  }
+
+  .containerContent1 b {
+    font-size: 22px;
+  }
+
+  .containerImg1 {
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    position: absolute;
+    padding-left: 10px;
+    bottom: 0px;
+    right: 0px;
+    border-radius: 199px 0px 0px 67px;
+    width: 40%;
+    height: 65vh;
+  }
+
+  .containerImg1 img {
+    width: 700px;
+  }
+  /* ------------------------- */
+
+  /* Styles container inital 2 */
+  .containerInitial2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5% 1% 5%;
+  }
+
+  .containerInitial2 h1 {
+    text-align: start;
+    white-space: nowrap;
+  }
+
+  .containerContent2 {
+    max-width: 400px;
+    margin-right: 5%;
+  }
+
+  .containerContent2 h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+
+  .containerOfAdvantagesItem {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .containerOfAdvantagesItem h1 {
+    margin: 0px 7px;
+  }
+
+  .AdvantagesItemTitle {
+    margin: 2px 0px;
+  }
+
+  .containerOfAdvantagesItem p {
+    width: 75%;
+  }
+
+  .person {
+    display: initial;
+    width: 530px;
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+  }
+  /* ------------------------- */
+
+  /* Styles container inital 3 */
+  .containerInitial3 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 120px;
+    padding-bottom: 170px;
+  }
+
+  .containerContent3 {
+    padding-left: 40px;
+    width: 50%;
+  }
+
+  .containerContent3 p {
+    width: 90%;
+    font-size: 21px;
+  }
+
+  .containerImg2 {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+  }
+
+  .containerImg2 img {
+    width: 350px;
+  }
+  /* ------------------------- */
+
+  /* Styles container inital 4 */
+  .containerInitial4 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    background-image: url("https://downloadwap.com/thumbs2/wallpapers/p2ls/new/34/view_iEflDYe1Zu.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .containerContent4 {
+    width: 48%;
+    height: 80vh;
+    border-radius: 50%;
+    background: #ffff;
+  }
+
+  .containerContent4 p {
+    padding: 0px 15px;
+  }
+  /* ------------------------- */
+}

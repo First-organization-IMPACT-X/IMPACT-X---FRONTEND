@@ -1,0 +1,227 @@
+/* Media screen mobile */
+
+.containerFixed {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  padding : 15px 10px;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  box-shadow: 2px 3px 10px black;
+  z-index: 10;
+  overflow-y: auto;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.containerButtonReactions {
+  flex-direction: column;
+  text-align: center;
+  display: flex;
+  margin-bottom: 14px;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.containerButtonReactions p {
+  margin: 0px;
+}
+
+.buttonReactions {
+  display: flex;
+  align-items: center;
+  font-size: 19px;
+  justify-content: center;
+  padding: 7px 0px;
+  background-color: #4b61af;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.buttonReactions:hover {
+  background: rgb(51, 51, 169);
+}
+
+/*--------------------------------*/
+/* styles top section comments */
+.bottonWithoutVisibilityComments {
+  cursor: pointer;
+  margin-top: -15px;
+  font-size: 40px;
+}
+
+.moveToLikes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+.buttonToMoveToLikes {
+  cursor: pointer;
+  margin: 0px;
+}
+
+.containerComment {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #eeebeb;
+  border-radius: 10px;
+}
+
+.userImage {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.userImage img {
+  width: 170px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.commentContent {
+  width: 100%;
+}
+
+.commentUsername {
+  text-decoration: underline;
+  margin: 0px;
+  font-size: 22px;
+  width: 100%;
+}
+
+.commentText {
+  word-break: break-word;
+  font-size: 19px;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 5px;
+}
+
+.commentDate {
+  display: block;
+  text-align: end;
+  font-size: 18px;
+  margin: 0px 10px;
+}
+
+/*--------------------------------*/
+/* style top section likes */
+/* Contenedor principal de likes */
+.likesContainer {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Título de likes */
+.moveToComents {
+  font-size: 23px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.buttonToMoveToComment {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0px;
+}
+
+/* Contenedor principal de likes */
+.likesContainer {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.likesList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.likeUser {
+  display: flex;
+  align-items: center;
+}
+
+.likeItem {
+  display: flex;
+  background: #C0C0FF;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.likeItem img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.likeItem h2 {
+  display: inline-block;
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: 22px;
+}
+
+/*   Media screen tablet   */
+@media screen and (min-width: 550px) and (max-width: 950px) {
+  .containerFixed {
+    padding: 20px 35px;
+  }
+
+  .containerComment {
+    flex-direction: initial;
+  }
+
+  .userImage {
+    display: initial;
+    justify-content: initial;
+    flex: 0 0 90px;
+  }
+}
+
+/* media screen desktop */
+@media screen and (min-width: 950px) {
+  .containerFixed {
+    padding: 30px 50px;
+  }
+
+  .containerComment {
+    flex-direction: initial;
+  }
+
+  .userImage {
+    display: initial;
+    justify-content: initial;
+    flex: 0 0 90px;
+  }
+}
